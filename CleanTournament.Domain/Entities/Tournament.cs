@@ -12,6 +12,7 @@ namespace CleanTournament.Domain.Entities
         public string Title { get; set; }
         public string Author { get; set; }
         public DateTime StartDate { get; set; }
+        public string Address { get; set; }
         public string Description { get; set; }
         public int NumberOfPeople { get; set; }
         public int DisciplineId { get; set; }

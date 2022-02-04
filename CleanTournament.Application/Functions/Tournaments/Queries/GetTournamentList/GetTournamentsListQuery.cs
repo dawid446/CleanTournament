@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CleanTournament.Application.Functions.Tournaments
+namespace CleanTournament.Application.Functions.Tournaments.Queries
 {
     public class GetTournamentsListQuery : IRequest<List<TournamentViewModel>>
     {

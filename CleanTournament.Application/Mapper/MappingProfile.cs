@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using CleanTournament.Application.Functions.Tournaments;
+using CleanTournament.Application.Functions.Tournaments.Queries;
 using CleanTournament.Domain.Entities;
 using System;
 using System.Collections.Generic;
@@ -14,6 +14,8 @@ namespace CleanTournament.Application.Mapper
         public MappingProfile()
         {
             CreateMap<Tournament, TournamentViewModel>().ReverseMap();
+            CreateMap<Discipline, DisciplineDTO>().ReverseMap();
+
         }
     }
 }
