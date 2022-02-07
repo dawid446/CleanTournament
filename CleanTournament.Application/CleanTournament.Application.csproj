@@ -17,4 +17,11 @@
     <ProjectReference Include="..\CleanTournament.Domain\CleanTournament.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Functions\Disciplines\Commands\" />
+    <Folder Include="Functions\Disciplines\Queries\" />
+    <Folder Include="Functions\Matches\Commands\" />
+    <Folder Include="Functions\Matches\Queries\" />
+  </ItemGroup>
+
 </Project>
