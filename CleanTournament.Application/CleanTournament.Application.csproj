@@ -22,7 +22,6 @@
     <Folder Include="Functions\Disciplines\Queries\" />
     <Folder Include="Functions\Matches\Commands\" />
     <Folder Include="Functions\Matches\Queries\" />
-    <Folder Include="Functions\Tournaments\Commands\" />
   </ItemGroup>
 
 </Project>

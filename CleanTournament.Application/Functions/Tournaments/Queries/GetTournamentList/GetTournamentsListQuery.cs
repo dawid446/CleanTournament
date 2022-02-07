@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CleanTournament.Application.Functions.Tournaments.Queries
+namespace CleanTournament.Application.Functions.Tournaments.Queries.GetTournamentList
 {
-    public class GetTournamentsListQuery : IRequest<List<TournamentViewModel>>
+    public class GetTournamentsListQuery : IRequest<List<TournamentsListViewModel>>
     {
 
     }

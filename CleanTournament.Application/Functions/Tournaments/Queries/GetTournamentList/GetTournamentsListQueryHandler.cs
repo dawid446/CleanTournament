@@ -8,9 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using AutoMapper;
 
-namespace CleanTournament.Application.Functions.Tournaments.Queries
+namespace CleanTournament.Application.Functions.Tournaments.Queries.GetTournamentList
 {
-    public class GetTournamentsListQueryHandler : IRequestHandler<GetTournamentsListQuery, List<TournamentViewModel>>
+    public class GetTournamentsListQueryHandler : IRequestHandler<GetTournamentsListQuery, List<TournamentsListViewModel>>
     {
         private readonly IAsyncRepository<Tournament> _tournamentRepository;
         private readonly IAsyncRepository<Discipline> _disciplineRepository;
@@ -22,12 +22,12 @@ namespace CleanTournament.Application.Functions.Tournaments.Queries
             _disciplineRepository = disciplineRepository;
             _mapper = mapper;
         }
-        public async Task<List<TournamentViewModel>> Handle(GetTournamentsListQuery request, CancellationToken cancellationToken)
+        public async Task<List<TournamentsListViewModel>> Handle(GetTournamentsListQuery request, CancellationToken cancellationToken)
         {
             var all = await _tournamentRepository.GetAllAsync();
             var allOrdered = all.OrderBy(x => x.StartDate);
 
-            return _mapper.Map<List<TournamentViewModel>>(allOrdered);
+            return _mapper.Map<List<TournamentsListViewModel>>(allOrdered);
             
         }
     }

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CleanTournament.Domain.Entities
+namespace CleanTournament.Application.Functions.Tournaments.Queries.GetTournament
 {
-    public class Match
+    public class MatchesDTO
     {
         public int MatchId { get; set; }
         public string Title { get; set; }
@@ -18,6 +18,5 @@ namespace CleanTournament.Domain.Entities
         public string PictureTeam { get; set; }
         public string PictureOpponent { get; set; }
         public int TournamentId { get; set; }
-        public Tournament Tournament { get; set; }
     }
 }

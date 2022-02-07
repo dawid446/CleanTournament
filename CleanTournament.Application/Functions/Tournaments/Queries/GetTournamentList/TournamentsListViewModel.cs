@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CleanTournament.Application.Functions.Tournaments.Queries
+namespace CleanTournament.Application.Functions.Tournaments.Queries.GetTournamentList
 {
-    public class TournamentViewModel
+    public class TournamentsListViewModel
     {
         public int TournamentId { get;set; }
         public string Title { get; set; }
